@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RUS-Yy-zNP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Meteor View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MeteorViewController" customModule="TheFallen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NyY-5A-fJk">
+                                <rect key="frame" x="0.0" y="157" width="414" height="656"/>
+                                <color key="backgroundColor" red="0.10980392156862745" green="0.11764705882352941" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="meteorListCell" focusStyle="custom" rowHeight="92" id="GDF-ge-I5I" customClass="MeteorListTableViewCell" customModule="TheFallen" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="92"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GDF-ge-I5I" id="Fp4-hI-FQ0">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="92"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aachen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNH-ot-fqi">
+                                                    <rect key="frame" x="28" y="20" width="57.5" height="20"/>
+                                                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
+                                                    <color key="textColor" name="navTitleColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sep 6, 1956 · 0.54 kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmK-5J-Xd3">
+                                                    <rect key="frame" x="28" y="52" width="143.5" height="18"/>
+                                                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                                                    <color key="textColor" name="labelSubtitle"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goForwardArrow" translatesAutoresizingMaskIntoConstraints="NO" id="0f4-zI-OWu">
+                                                    <rect key="frame" x="384" y="36" width="20" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="1bQ-oc-TP3"/>
+                                                        <constraint firstAttribute="height" constant="20" id="2tg-rj-EJK"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7m-Y5-1l5">
+                                                    <rect key="frame" x="15" y="91" width="399" height="1"/>
+                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="mKj-fB-WSF"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="UmK-5J-Xd3" secondAttribute="bottom" constant="22" id="9Ak-bh-mGy"/>
+                                                <constraint firstItem="qNH-ot-fqi" firstAttribute="leading" secondItem="Fp4-hI-FQ0" secondAttribute="leading" constant="28" id="Gg7-BE-CxG"/>
+                                                <constraint firstAttribute="bottom" secondItem="R7m-Y5-1l5" secondAttribute="bottom" id="IQV-Lx-XfK"/>
+                                                <constraint firstItem="qNH-ot-fqi" firstAttribute="top" secondItem="Fp4-hI-FQ0" secondAttribute="top" constant="20" symbolic="YES" id="Z3S-A2-5T9"/>
+                                                <constraint firstAttribute="trailing" secondItem="0f4-zI-OWu" secondAttribute="trailing" constant="10" id="fRl-Qm-GoS"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="UmK-5J-Xd3" secondAttribute="trailing" constant="20" symbolic="YES" id="myp-QE-PgR"/>
+                                                <constraint firstItem="0f4-zI-OWu" firstAttribute="centerY" secondItem="Fp4-hI-FQ0" secondAttribute="centerY" id="rQH-4d-qMX"/>
+                                                <constraint firstItem="R7m-Y5-1l5" firstAttribute="leading" secondItem="Fp4-hI-FQ0" secondAttribute="leading" constant="15" id="sUi-mT-6ey"/>
+                                                <constraint firstItem="UmK-5J-Xd3" firstAttribute="leading" secondItem="Fp4-hI-FQ0" secondAttribute="leading" constant="28" id="t0D-24-sft"/>
+                                                <constraint firstAttribute="trailing" secondItem="R7m-Y5-1l5" secondAttribute="trailing" id="vOe-QY-euO"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qNH-ot-fqi" secondAttribute="trailing" constant="20" symbolic="YES" id="w6i-ox-K4m"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.10980392156862745" green="0.11764705882352941" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" name="navTitleColor"/>
+                                        <connections>
+                                            <outlet property="meteorDateSizeLabel" destination="UmK-5J-Xd3" id="0fg-UO-sFI"/>
+                                            <outlet property="meteorNameLabel" destination="qNH-ot-fqi" id="MVa-IY-H6r"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="mTI-LG-T07">
+                                <rect key="frame" x="188.5" y="432" width="37" height="37"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iWl-pV-gCY">
+                                <rect key="frame" x="18" y="103" width="378" height="32"/>
+                                <color key="backgroundColor" red="0.27058823529411763" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="By Date"/>
+                                    <segment title="By Size"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" name="segementSelectedColor"/>
+                                <connections>
+                                    <action selector="segmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="1Bb-YT-R8g"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.10980392156862745" green="0.11764705882352941" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NyY-5A-fJk" firstAttribute="top" secondItem="iWl-pV-gCY" secondAttribute="bottom" constant="23" id="2Uw-fM-e95"/>
+                            <constraint firstItem="iWl-pV-gCY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="AP4-Sf-JHH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iWl-pV-gCY" secondAttribute="trailing" constant="18" id="Hyu-Ya-MFF"/>
+                            <constraint firstItem="mTI-LG-T07" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IUs-5m-p6E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NyY-5A-fJk" secondAttribute="trailing" id="Qq0-16-MMp"/>
+                            <constraint firstItem="iWl-pV-gCY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="VtA-3D-t0h"/>
+                            <constraint firstItem="NyY-5A-fJk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iwE-PW-TlR"/>
+                            <constraint firstItem="mTI-LG-T07" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="oHY-nY-SZs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NyY-5A-fJk" secondAttribute="bottom" id="uaf-Ny-tH5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Y5G-Ph-cKf"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="mTI-LG-T07" id="kpL-Tu-gwI"/>
+                        <outlet property="meteorListTableView" destination="NyY-5A-fJk" id="BgS-I9-R9h"/>
+                        <outlet property="meteorSegementedControl" destination="iWl-pV-gCY" id="ywr-Bv-Q8H"/>
+                        <segue destination="JsH-AU-3mL" kind="show" identifier="goToMap" id="lne-zs-P5e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108.69565217391305" y="1484.5982142857142"/>
+        </scene>
+        <!--Meteor Map View Controller-->
+        <scene sceneID="yUK-fn-XjJ">
+            <objects>
+                <viewController id="JsH-AU-3mL" customClass="MeteorMapViewController" customModule="TheFallen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QXV-UR-C3f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gQN-3Q-DgC">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gef-Ry-qq7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gQN-3Q-DgC" firstAttribute="leading" secondItem="gef-Ry-qq7" secondAttribute="leading" id="EKm-ip-fEh"/>
+                            <constraint firstItem="gQN-3Q-DgC" firstAttribute="top" secondItem="gef-Ry-qq7" secondAttribute="top" id="oF3-54-Xva"/>
+                            <constraint firstItem="gef-Ry-qq7" firstAttribute="bottom" secondItem="gQN-3Q-DgC" secondAttribute="bottom" id="qTA-cD-X1s"/>
+                            <constraint firstItem="gef-Ry-qq7" firstAttribute="trailing" secondItem="gQN-3Q-DgC" secondAttribute="trailing" id="xXW-OR-9xx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="p0y-e8-KID"/>
+                    <connections>
+                        <outlet property="meteorMapView" destination="gQN-3Q-DgC" id="IOE-WY-Xev"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VmV-kj-Elh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840.57971014492762" y="1484.5982142857142"/>
+        </scene>
+        <!--Meteor Favourites View Controller-->
+        <scene sceneID="Iab-vF-8l1">
+            <objects>
+                <viewController id="ujK-cD-4ZR" customClass="MeteorFavouritesViewController" customModule="TheFallen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VWp-Pe-waZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TcR-bG-bud">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.1176470588" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="meteorFavouriteCell" rowHeight="92" id="kyU-mB-wwX" customClass="MeteorFavouritesTableViewCell" customModule="TheFallen" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="92"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kyU-mB-wwX" id="76p-Bz-MSn">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="92"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aachen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ghn-aU-n9q">
+                                                    <rect key="frame" x="28" y="20" width="57.5" height="20"/>
+                                                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
+                                                    <color key="textColor" name="navTitleColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sep 6, 1956 · 0.54 kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAt-QM-RPd">
+                                                    <rect key="frame" x="28" y="52" width="143.5" height="18"/>
+                                                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                                                    <color key="textColor" name="labelSubtitle"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goForwardArrow" translatesAutoresizingMaskIntoConstraints="NO" id="2g0-fu-jeW">
+                                                    <rect key="frame" x="384" y="36" width="20" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="GS7-rd-qk2"/>
+                                                        <constraint firstAttribute="width" constant="20" id="jpq-ge-hFT"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x0b-1L-MpT">
+                                                    <rect key="frame" x="15" y="91" width="399" height="1"/>
+                                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="qVI-W4-K16"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dAt-QM-RPd" secondAttribute="trailing" constant="20" symbolic="YES" id="5xl-dS-FzR"/>
+                                                <constraint firstAttribute="bottom" secondItem="x0b-1L-MpT" secondAttribute="bottom" id="FLX-JI-KVr"/>
+                                                <constraint firstItem="Ghn-aU-n9q" firstAttribute="top" secondItem="76p-Bz-MSn" secondAttribute="top" constant="20" symbolic="YES" id="MZr-4O-Vtz"/>
+                                                <constraint firstAttribute="trailing" secondItem="x0b-1L-MpT" secondAttribute="trailing" id="U8U-cn-cUs"/>
+                                                <constraint firstItem="Ghn-aU-n9q" firstAttribute="leading" secondItem="76p-Bz-MSn" secondAttribute="leading" constant="28" id="UAN-fN-sMH"/>
+                                                <constraint firstAttribute="trailing" secondItem="2g0-fu-jeW" secondAttribute="trailing" constant="10" id="Wz5-EW-nB3"/>
+                                                <constraint firstAttribute="bottom" secondItem="dAt-QM-RPd" secondAttribute="bottom" constant="22" id="aOs-OG-anX"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ghn-aU-n9q" secondAttribute="trailing" constant="20" symbolic="YES" id="baN-vf-ZRS"/>
+                                                <constraint firstItem="dAt-QM-RPd" firstAttribute="leading" secondItem="76p-Bz-MSn" secondAttribute="leading" constant="28" id="jOy-9h-odN"/>
+                                                <constraint firstItem="2g0-fu-jeW" firstAttribute="centerY" secondItem="76p-Bz-MSn" secondAttribute="centerY" id="u3Z-Iv-OKx"/>
+                                                <constraint firstItem="x0b-1L-MpT" firstAttribute="leading" secondItem="76p-Bz-MSn" secondAttribute="leading" constant="15" id="yi9-ss-z76"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.10980392160000001" green="0.1176470588" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" name="navTitleColor"/>
+                                        <connections>
+                                            <outlet property="meteorDateSizeLabel" destination="dAt-QM-RPd" id="iLI-CT-KDU"/>
+                                            <outlet property="meteorNameLabel" destination="Ghn-aU-n9q" id="JmT-sg-yKS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EYs-wP-crZ">
+                                <rect key="frame" x="87" y="376.5" width="240" height="148"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noFavourite" translatesAutoresizingMaskIntoConstraints="NO" id="0W1-qf-Hjr">
+                                        <rect key="frame" x="97.5" y="30" width="45" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="6uZ-s1-7k9"/>
+                                            <constraint firstAttribute="width" constant="45" id="oiG-Gi-l8k"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here will appear your favorite meteors" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJK-rQ-dvM">
+                                        <rect key="frame" x="5" y="70" width="230" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="230" id="2gd-E9-Rap"/>
+                                            <constraint firstAttribute="height" constant="60" id="uAU-Ve-qGP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
+                                        <color key="textColor" name="labelSubtitle"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="0W1-qf-Hjr" firstAttribute="top" secondItem="EYs-wP-crZ" secondAttribute="top" constant="30" id="Ss1-0g-axO"/>
+                                    <constraint firstAttribute="width" constant="240" id="eDT-sn-cOr"/>
+                                    <constraint firstItem="YJK-rQ-dvM" firstAttribute="top" secondItem="0W1-qf-Hjr" secondAttribute="bottom" id="j8O-QU-Hm9"/>
+                                    <constraint firstItem="YJK-rQ-dvM" firstAttribute="centerX" secondItem="0W1-qf-Hjr" secondAttribute="centerX" id="rVG-h3-eXE"/>
+                                    <constraint firstItem="0W1-qf-Hjr" firstAttribute="centerX" secondItem="EYs-wP-crZ" secondAttribute="centerX" id="tSe-NB-U33"/>
+                                    <constraint firstAttribute="height" constant="148" id="u8f-G0-tjF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1ft-Yj-u26"/>
+                        <color key="backgroundColor" red="0.10980392156862745" green="0.11764705882352941" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TcR-bG-bud" firstAttribute="top" secondItem="1ft-Yj-u26" secondAttribute="top" id="8aI-CF-WIe"/>
+                            <constraint firstItem="1ft-Yj-u26" firstAttribute="bottom" secondItem="TcR-bG-bud" secondAttribute="bottom" id="F5H-qF-wE7"/>
+                            <constraint firstItem="EYs-wP-crZ" firstAttribute="centerX" secondItem="1ft-Yj-u26" secondAttribute="centerX" id="Sgn-1s-WJN"/>
+                            <constraint firstItem="TcR-bG-bud" firstAttribute="leading" secondItem="1ft-Yj-u26" secondAttribute="leading" id="dZ9-bI-2vF"/>
+                            <constraint firstItem="EYs-wP-crZ" firstAttribute="centerY" secondItem="1ft-Yj-u26" secondAttribute="centerY" id="wlY-kx-aU0"/>
+                            <constraint firstItem="1ft-Yj-u26" firstAttribute="trailing" secondItem="TcR-bG-bud" secondAttribute="trailing" id="zAR-Wx-bbX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oLt-k7-xEM"/>
+                    <connections>
+                        <outlet property="NoFavouriteView" destination="EYs-wP-crZ" id="khq-4E-ydA"/>
+                        <outlet property="meteorFavouritesTableView" destination="TcR-bG-bud" id="DOZ-jP-nJ0"/>
+                        <segue destination="JsH-AU-3mL" kind="show" identifier="goToMapFromFavourites" id="Aoe-El-UAx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S17-c1-klP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1711.5942028985507" y="1484.5982142857142"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="vFP-QV-Kgb">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="RUS-Yy-zNP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="rja-gh-Hob">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.11764705882352941" green="0.12941176470588234" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.18823529410000001" green="0.63529411759999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.11764705882352941" green="0.12941176470588234" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.0" green="1" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Jsl-bX-vxR" kind="relationship" relationship="viewControllers" id="eVk-qh-01R"/>
+                        <segue destination="mJi-3R-QdY" kind="relationship" relationship="viewControllers" id="gDG-ZR-iZX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7wH-Yp-ylE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="559" y="-76"/>
+        </scene>
+        <!--Meteors-->
+        <scene sceneID="SPt-bd-sS1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jsl-bX-vxR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Meteors" image="meteors" id="nlF-3W-fHP"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2gb-30-3Fl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XA1-qc-A7Z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hdh-Z9-Jpr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108.69565217391305" y="734.59821428571422"/>
+        </scene>
+        <!--Favourites-->
+        <scene sceneID="zQY-eV-v2Q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mJi-3R-QdY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favourites" image="vector" id="zKZ-da-dow"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hbn-F2-xW9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ujK-cD-4ZR" kind="relationship" relationship="rootViewController" id="ZMn-nT-UKs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="867-2B-d9g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1712" y="735"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Aoe-El-UAx"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="goForwardArrow" width="7" height="13"/>
+        <image name="meteors" width="30" height="28"/>
+        <image name="noFavourite" width="48.5" height="42.5"/>
+        <image name="vector" width="26.5" height="23.5"/>
+        <namedColor name="labelSubtitle">
+            <color red="0.47843137254901963" green="0.50196078431372548" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="navTitleColor">
+            <color red="0.92156862745098034" green="0.97254901960784312" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="segementSelectedColor">
+            <color red="0.10980392156862745" green="0.11764705882352941" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -9,23 +9,31 @@
 /* Begin PBXBuildFile section */
 		B6637FEF26FBD29E0000DC2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6637FEE26FBD29E0000DC2F /* AppDelegate.swift */; };
 		B6637FF126FBD29E0000DC2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6637FF026FBD29E0000DC2F /* SceneDelegate.swift */; };
-		B6637FF326FBD29E0000DC2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6637FF226FBD29E0000DC2F /* ViewController.swift */; };
+		B6637FF326FBD29E0000DC2F /* MeteorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6637FF226FBD29E0000DC2F /* MeteorViewController.swift */; };
 		B6637FF626FBD29E0000DC2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6637FF426FBD29E0000DC2F /* Main.storyboard */; };
 		B6637FF826FBD2A20000DC2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6637FF726FBD2A20000DC2F /* Assets.xcassets */; };
 		B6637FFB26FBD2A20000DC2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6637FF926FBD2A20000DC2F /* LaunchScreen.storyboard */; };
-		B663800626FBD2A20000DC2F /* TheFallenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B663800526FBD2A20000DC2F /* TheFallenTests.swift */; };
-		B663801126FBD2A20000DC2F /* TheFallenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B663801026FBD2A20000DC2F /* TheFallenUITests.swift */; };
+		B663800626FBD2A20000DC2F /* MeteorViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B663800526FBD2A20000DC2F /* MeteorViewModelTests.swift */; };
+		B663802726FD0E8D0000DC2F /* MeteorNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B663802626FD0E8D0000DC2F /* MeteorNetworkService.swift */; };
+		B663802926FD0FE80000DC2F /* MeteorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B663802826FD0FE80000DC2F /* MeteorModel.swift */; };
+		B663802B26FD18080000DC2F /* MeteorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B663802A26FD18080000DC2F /* MeteorViewModel.swift */; };
+		B663802F26FD255C0000DC2F /* MeteorListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B663802E26FD255C0000DC2F /* MeteorListTableViewCell.swift */; };
+		B663803126FD25820000DC2F /* MeteorCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B663803026FD25820000DC2F /* MeteorCellViewModel.swift */; };
+		B663804726FD2F620000DC2F /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B663803526FD2F5F0000DC2F /* SF-Pro-Text-Regular.otf */; };
+		B663805826FE6BEB0000DC2F /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B663805726FE6BEB0000DC2F /* String+Extensions.swift */; };
+		B663805A26FE818B0000DC2F /* MeteorMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B663805926FE818B0000DC2F /* MeteorMapViewController.swift */; };
+		B663805C26FE838F0000DC2F /* MeteorMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B663805B26FE838F0000DC2F /* MeteorMapViewModel.swift */; };
+		B663805E26FE8DB30000DC2F /* MeteorFavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B663805D26FE8DB30000DC2F /* MeteorFavouritesViewController.swift */; };
+		B663806226FE91690000DC2F /* FavouritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B663806126FE91690000DC2F /* FavouritesManager.swift */; };
+		B663806426FF2E2E0000DC2F /* MeteorFavouritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B663806326FF2E2E0000DC2F /* MeteorFavouritesTableViewCell.swift */; };
+		B663806626FF85410000DC2F /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B663806526FF85410000DC2F /* StringConstants.swift */; };
+		B66380682700D11B0000DC2F /* MeteorCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66380672700D11B0000DC2F /* MeteorCellViewModelTests.swift */; };
+		B663806A2700D2F90000DC2F /* MeteorMapViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66380692700D2F90000DC2F /* MeteorMapViewModelTests.swift */; };
+		B663806C2700DB240000DC2F /* FavouritesManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B663806B2700DB240000DC2F /* FavouritesManagerTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		B663800226FBD2A20000DC2F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B6637FE326FBD29E0000DC2F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B6637FEA26FBD29E0000DC2F;
-			remoteInfo = TheFallen;
-		};
-		B663800D26FBD2A20000DC2F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B6637FE326FBD29E0000DC2F /* Project object */;
 			proxyType = 1;
@@ -38,17 +46,30 @@
 		B6637FEB26FBD29E0000DC2F /* TheFallen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheFallen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6637FEE26FBD29E0000DC2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6637FF026FBD29E0000DC2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B6637FF226FBD29E0000DC2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B6637FF226FBD29E0000DC2F /* MeteorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorViewController.swift; sourceTree = "<group>"; };
 		B6637FF526FBD29E0000DC2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6637FF726FBD2A20000DC2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6637FFA26FBD2A20000DC2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6637FFC26FBD2A20000DC2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B663800126FBD2A20000DC2F /* TheFallenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheFallenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B663800526FBD2A20000DC2F /* TheFallenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheFallenTests.swift; sourceTree = "<group>"; };
+		B663800526FBD2A20000DC2F /* MeteorViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorViewModelTests.swift; sourceTree = "<group>"; };
 		B663800726FBD2A20000DC2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B663800C26FBD2A20000DC2F /* TheFallenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheFallenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B663801026FBD2A20000DC2F /* TheFallenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheFallenUITests.swift; sourceTree = "<group>"; };
-		B663801226FBD2A20000DC2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B663802626FD0E8D0000DC2F /* MeteorNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorNetworkService.swift; sourceTree = "<group>"; };
+		B663802826FD0FE80000DC2F /* MeteorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorModel.swift; sourceTree = "<group>"; };
+		B663802A26FD18080000DC2F /* MeteorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorViewModel.swift; sourceTree = "<group>"; };
+		B663802E26FD255C0000DC2F /* MeteorListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorListTableViewCell.swift; sourceTree = "<group>"; };
+		B663803026FD25820000DC2F /* MeteorCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorCellViewModel.swift; sourceTree = "<group>"; };
+		B663803526FD2F5F0000DC2F /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		B663805726FE6BEB0000DC2F /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		B663805926FE818B0000DC2F /* MeteorMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorMapViewController.swift; sourceTree = "<group>"; };
+		B663805B26FE838F0000DC2F /* MeteorMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorMapViewModel.swift; sourceTree = "<group>"; };
+		B663805D26FE8DB30000DC2F /* MeteorFavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorFavouritesViewController.swift; sourceTree = "<group>"; };
+		B663806126FE91690000DC2F /* FavouritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesManager.swift; sourceTree = "<group>"; };
+		B663806326FF2E2E0000DC2F /* MeteorFavouritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorFavouritesTableViewCell.swift; sourceTree = "<group>"; };
+		B663806526FF85410000DC2F /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
+		B66380672700D11B0000DC2F /* MeteorCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorCellViewModelTests.swift; sourceTree = "<group>"; };
+		B66380692700D2F90000DC2F /* MeteorMapViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorMapViewModelTests.swift; sourceTree = "<group>"; };
+		B663806B2700DB240000DC2F /* FavouritesManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesManagerTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +87,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B663800926FBD2A20000DC2F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +95,6 @@
 			children = (
 				B6637FED26FBD29E0000DC2F /* TheFallen */,
 				B663800426FBD2A20000DC2F /* TheFallenTests */,
-				B663800F26FBD2A20000DC2F /* TheFallenUITests */,
 				B6637FEC26FBD29E0000DC2F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +104,6 @@
 			children = (
 				B6637FEB26FBD29E0000DC2F /* TheFallen.app */,
 				B663800126FBD2A20000DC2F /* TheFallenTests.xctest */,
-				B663800C26FBD2A20000DC2F /* TheFallenUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,13 +111,15 @@
 		B6637FED26FBD29E0000DC2F /* TheFallen */ = {
 			isa = PBXGroup;
 			children = (
-				B6637FEE26FBD29E0000DC2F /* AppDelegate.swift */,
-				B6637FF026FBD29E0000DC2F /* SceneDelegate.swift */,
-				B6637FF226FBD29E0000DC2F /* ViewController.swift */,
-				B6637FF426FBD29E0000DC2F /* Main.storyboard */,
-				B6637FF726FBD2A20000DC2F /* Assets.xcassets */,
-				B6637FF926FBD2A20000DC2F /* LaunchScreen.storyboard */,
-				B6637FFC26FBD2A20000DC2F /* Info.plist */,
+				B663806026FE91360000DC2F /* Helpers */,
+				B663803226FD2EA90000DC2F /* Fonts */,
+				B663802526FBDE570000DC2F /* App */,
+				B663801E26FBDDFA0000DC2F /* View Models */,
+				B663802426FBDE510000DC2F /* Views */,
+				B663802126FBDE360000DC2F /* Models */,
+				B663802326FBDE490000DC2F /* Files */,
+				B663802226FBDE3C0000DC2F /* Network Service */,
+				B663802026FBDE2D0000DC2F /* Extensions */,
 			);
 			path = TheFallen;
 			sourceTree = "<group>";
@@ -113,19 +127,112 @@
 		B663800426FBD2A20000DC2F /* TheFallenTests */ = {
 			isa = PBXGroup;
 			children = (
-				B663800526FBD2A20000DC2F /* TheFallenTests.swift */,
+				B663800526FBD2A20000DC2F /* MeteorViewModelTests.swift */,
+				B66380672700D11B0000DC2F /* MeteorCellViewModelTests.swift */,
+				B66380692700D2F90000DC2F /* MeteorMapViewModelTests.swift */,
+				B663806B2700DB240000DC2F /* FavouritesManagerTest.swift */,
 				B663800726FBD2A20000DC2F /* Info.plist */,
 			);
 			path = TheFallenTests;
 			sourceTree = "<group>";
 		};
-		B663800F26FBD2A20000DC2F /* TheFallenUITests */ = {
+		B663801E26FBDDFA0000DC2F /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				B663801026FBD2A20000DC2F /* TheFallenUITests.swift */,
-				B663801226FBD2A20000DC2F /* Info.plist */,
+				B663802A26FD18080000DC2F /* MeteorViewModel.swift */,
+				B663803026FD25820000DC2F /* MeteorCellViewModel.swift */,
+				B663805B26FE838F0000DC2F /* MeteorMapViewModel.swift */,
 			);
-			path = TheFallenUITests;
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		B663802026FBDE2D0000DC2F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B663805726FE6BEB0000DC2F /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B663802126FBDE360000DC2F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B663802826FD0FE80000DC2F /* MeteorModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B663802226FBDE3C0000DC2F /* Network Service */ = {
+			isa = PBXGroup;
+			children = (
+				B663802626FD0E8D0000DC2F /* MeteorNetworkService.swift */,
+			);
+			path = "Network Service";
+			sourceTree = "<group>";
+		};
+		B663802326FBDE490000DC2F /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6637FFC26FBD2A20000DC2F /* Info.plist */,
+				B6637FF926FBD2A20000DC2F /* LaunchScreen.storyboard */,
+				B6637FF726FBD2A20000DC2F /* Assets.xcassets */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		B663802426FBDE510000DC2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B663802D26FD21A20000DC2F /* Controllers */,
+				B663802C26FD218C0000DC2F /* Cells */,
+				B6637FF426FBD29E0000DC2F /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B663802526FBDE570000DC2F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B6637FEE26FBD29E0000DC2F /* AppDelegate.swift */,
+				B6637FF026FBD29E0000DC2F /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B663802C26FD218C0000DC2F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B663802E26FD255C0000DC2F /* MeteorListTableViewCell.swift */,
+				B663806326FF2E2E0000DC2F /* MeteorFavouritesTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B663802D26FD21A20000DC2F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6637FF226FBD29E0000DC2F /* MeteorViewController.swift */,
+				B663805926FE818B0000DC2F /* MeteorMapViewController.swift */,
+				B663805D26FE8DB30000DC2F /* MeteorFavouritesViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B663803226FD2EA90000DC2F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B663803526FD2F5F0000DC2F /* SF-Pro-Text-Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B663806026FE91360000DC2F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B663806126FE91690000DC2F /* FavouritesManager.swift */,
+				B663806526FF85410000DC2F /* StringConstants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,24 +273,6 @@
 			productReference = B663800126FBD2A20000DC2F /* TheFallenTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B663800B26FBD2A20000DC2F /* TheFallenUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B663801B26FBD2A20000DC2F /* Build configuration list for PBXNativeTarget "TheFallenUITests" */;
-			buildPhases = (
-				B663800826FBD2A20000DC2F /* Sources */,
-				B663800926FBD2A20000DC2F /* Frameworks */,
-				B663800A26FBD2A20000DC2F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B663800E26FBD2A20000DC2F /* PBXTargetDependency */,
-			);
-			name = TheFallenUITests;
-			productName = TheFallenUITests;
-			productReference = B663800C26FBD2A20000DC2F /* TheFallenUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +286,6 @@
 						CreatedOnToolsVersion = 12.5.1;
 					};
 					B663800026FBD2A20000DC2F = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = B6637FEA26FBD29E0000DC2F;
-					};
-					B663800B26FBD2A20000DC2F = {
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = B6637FEA26FBD29E0000DC2F;
 					};
@@ -221,7 +306,6 @@
 			targets = (
 				B6637FEA26FBD29E0000DC2F /* TheFallen */,
 				B663800026FBD2A20000DC2F /* TheFallenTests */,
-				B663800B26FBD2A20000DC2F /* TheFallenUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B663804726FD2F620000DC2F /* SF-Pro-Text-Regular.otf in Resources */,
 				B6637FFB26FBD2A20000DC2F /* LaunchScreen.storyboard in Resources */,
 				B6637FF826FBD2A20000DC2F /* Assets.xcassets in Resources */,
 				B6637FF626FBD29E0000DC2F /* Main.storyboard in Resources */,
@@ -244,13 +329,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B663800A26FBD2A20000DC2F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -258,8 +336,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6637FF326FBD29E0000DC2F /* ViewController.swift in Sources */,
+				B663802926FD0FE80000DC2F /* MeteorModel.swift in Sources */,
+				B663806426FF2E2E0000DC2F /* MeteorFavouritesTableViewCell.swift in Sources */,
+				B663805A26FE818B0000DC2F /* MeteorMapViewController.swift in Sources */,
+				B663802F26FD255C0000DC2F /* MeteorListTableViewCell.swift in Sources */,
+				B6637FF326FBD29E0000DC2F /* MeteorViewController.swift in Sources */,
 				B6637FEF26FBD29E0000DC2F /* AppDelegate.swift in Sources */,
+				B663805826FE6BEB0000DC2F /* String+Extensions.swift in Sources */,
+				B663805E26FE8DB30000DC2F /* MeteorFavouritesViewController.swift in Sources */,
+				B663806626FF85410000DC2F /* StringConstants.swift in Sources */,
+				B663806226FE91690000DC2F /* FavouritesManager.swift in Sources */,
+				B663803126FD25820000DC2F /* MeteorCellViewModel.swift in Sources */,
+				B663805C26FE838F0000DC2F /* MeteorMapViewModel.swift in Sources */,
+				B663802726FD0E8D0000DC2F /* MeteorNetworkService.swift in Sources */,
+				B663802B26FD18080000DC2F /* MeteorViewModel.swift in Sources */,
 				B6637FF126FBD29E0000DC2F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,15 +358,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B663800626FBD2A20000DC2F /* TheFallenTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B663800826FBD2A20000DC2F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B663801126FBD2A20000DC2F /* TheFallenUITests.swift in Sources */,
+				B66380682700D11B0000DC2F /* MeteorCellViewModelTests.swift in Sources */,
+				B663806C2700DB240000DC2F /* FavouritesManagerTest.swift in Sources */,
+				B663806A2700D2F90000DC2F /* MeteorMapViewModelTests.swift in Sources */,
+				B663800626FBD2A20000DC2F /* MeteorViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +372,6 @@
 			isa = PBXTargetDependency;
 			target = B6637FEA26FBD29E0000DC2F /* TheFallen */;
 			targetProxy = B663800226FBD2A20000DC2F /* PBXContainerItemProxy */;
-		};
-		B663800E26FBD2A20000DC2F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B6637FEA26FBD29E0000DC2F /* TheFallen */;
-			targetProxy = B663800D26FBD2A20000DC2F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -438,7 +518,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M74ZCP24NH;
-				INFOPLIST_FILE = TheFallen/Info.plist;
+				INFOPLIST_FILE = TheFallen/Files/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +537,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M74ZCP24NH;
-				INFOPLIST_FILE = TheFallen/Info.plist;
+				INFOPLIST_FILE = TheFallen/Files/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -513,46 +593,6 @@
 			};
 			name = Release;
 		};
-		B663801C26FBD2A20000DC2F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M74ZCP24NH;
-				INFOPLIST_FILE = TheFallenUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.personal-work.TheFallenUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TheFallen;
-			};
-			name = Debug;
-		};
-		B663801D26FBD2A20000DC2F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M74ZCP24NH;
-				INFOPLIST_FILE = TheFallenUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.personal-work.TheFallenUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TheFallen;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -579,15 +619,6 @@
 			buildConfigurations = (
 				B663801926FBD2A20000DC2F /* Debug */,
 				B663801A26FBD2A20000DC2F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B663801B26FBD2A20000DC2F /* Build configuration list for PBXNativeTarget "TheFallenUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B663801C26FBD2A20000DC2F /* Debug */,
-				B663801D26FBD2A20000DC2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
