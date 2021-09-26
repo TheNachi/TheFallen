@@ -16,7 +16,6 @@ class MeteorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = StringConstants.meteors.rawValue
         self.activityIndicator.startAnimating()
         self.meteorListTableView.delegate = self
         self.meteorListTableView.dataSource = self
@@ -28,6 +27,7 @@ class MeteorViewController: UIViewController {
     }
     
     func setupView() {
+        self.title = StringConstants.meteors.rawValue
         let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: StringConstants.segmentTextColor.rawValue)]
         meteorSegementedControl.setTitleTextAttributes(titleTextAttributes as [NSAttributedString.Key : Any], for: .normal)
         meteorSegementedControl.setTitleTextAttributes(titleTextAttributes as [NSAttributedString.Key : Any], for: .selected)
