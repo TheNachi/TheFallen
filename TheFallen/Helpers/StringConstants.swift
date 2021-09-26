@@ -19,4 +19,5 @@ enum StringConstants: String {
     case meteorListCell
     case meteorFavouriteCell
     case segmentTextColor
+    case goForward
 }

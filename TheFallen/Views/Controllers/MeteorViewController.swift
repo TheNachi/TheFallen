@@ -31,7 +31,7 @@ class MeteorViewController: UIViewController {
         let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: StringConstants.segmentTextColor.rawValue)]
         meteorSegementedControl.setTitleTextAttributes(titleTextAttributes as [NSAttributedString.Key : Any], for: .normal)
         meteorSegementedControl.setTitleTextAttributes(titleTextAttributes as [NSAttributedString.Key : Any], for: .selected)
-        let rightButton = UIBarButtonItem(image: UIImage(systemName: "goforward"), style: .plain, target: self, action: #selector(self.refreshData))
+        let rightButton = UIBarButtonItem(image: UIImage(systemName: StringConstants.goForward.rawValue), style: .plain, target: self, action: #selector(self.refreshData))
         self.navigationItem.rightBarButtonItem  = rightButton
         rightButton.tintColor = UIColor.white
     }
