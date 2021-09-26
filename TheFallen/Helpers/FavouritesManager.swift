@@ -13,24 +13,24 @@ struct FavouritesManager {
     
     func toggleFavourites(meteor: MeteorModel) {
         guard let modelString = self.convertToJSONString(meteor: meteor) else { return }
-        var favourites = userDefaults.object(forKey: "FAVOURITES") as? [String] ?? []
+        var favourites = userDefaults.object(forKey: StringConstants.favouritesKey.rawValue) as? [String] ?? []
         if let index = favourites.firstIndex(of: modelString) {
             favourites.remove(at: index)
-            userDefaults.set(favourites, forKey: "FAVOURITES")
+            userDefaults.set(favourites, forKey: StringConstants.favouritesKey.rawValue)
         } else {
             favourites.append(modelString)
-            userDefaults.set(favourites, forKey: "FAVOURITES")
+            userDefaults.set(favourites, forKey: StringConstants.favouritesKey.rawValue)
         }
     }
     
     func isFavourite(meteor: MeteorModel) -> Bool {
         guard let modelString = self.convertToJSONString(meteor: meteor) else { return false }
-        let favourites = userDefaults.object(forKey: "FAVOURITES") as? [String] ?? []
+        let favourites = userDefaults.object(forKey: StringConstants.favouritesKey.rawValue) as? [String] ?? []
         return favourites.contains(modelString)
     }
 
     func getFavourites() -> [MeteorModel] {
-        let favourites = userDefaults.object(forKey: "FAVOURITES") as? [String] ?? []
+        let favourites = userDefaults.object(forKey: StringConstants.favouritesKey.rawValue) as? [String] ?? []
         return favourites.map { favourite in
             self.convertToModel(meteorString: favourite)!
         }

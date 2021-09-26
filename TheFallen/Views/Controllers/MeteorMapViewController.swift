@@ -8,7 +8,7 @@
 import UIKit
 import MapKit
 
-class MeteorMapViewController: UIViewController {
+class MeteorMapViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var meteorMapView: MKMapView!
     var viewModel: MeteorMapViewModel?
     
@@ -24,6 +24,7 @@ class MeteorMapViewController: UIViewController {
     
     func setUpMap() {
         guard let vModel = self.viewModel else { return }
+        self.meteorMapView.delegate = self
         self.title = vModel.getMeteorName()
         if let location = vModel.getLocation() {
             meteorMapView.centerToLocation(location)
@@ -43,15 +44,16 @@ class MeteorMapViewController: UIViewController {
     }
     
     func setUpNavigationBarItem() {
-        let leftButton = UIBarButtonItem(image: UIImage(named: "goBackImage"), style: .plain, target: self, action: #selector(self.dismissVC))
+        let leftButton = UIBarButtonItem(image: UIImage(named: StringConstants.goBackImage.rawValue), style: .plain, target: self, action: #selector(self.dismissVC))
         self.navigationItem.leftBarButtonItem  = leftButton
         leftButton.tintColor = .white
     }
     
     func setUpFavourites() {
-        guard let vModel = self.viewModel else { return }
-        let tintColor = FavouritesManager.shared.isFavourite(meteor: vModel.getMeteor()) ? UIColor.green : .white,
-            imageName = FavouritesManager.shared.isFavourite(meteor: vModel.getMeteor()) ? "isFavouriteImage" : "isNotFavouriteImage"
+        guard let vModel = self.viewModel,
+              let meteor = vModel.getMeteor() else { return }
+        let tintColor = FavouritesManager.shared.isFavourite(meteor: meteor) ? UIColor.green : .white,
+            imageName = FavouritesManager.shared.isFavourite(meteor: meteor) ? StringConstants.isFavouriteImage.rawValue : StringConstants.isNotFavouriteImage.rawValue
 
         let rightButton = UIBarButtonItem(image: UIImage(named: imageName), style: .plain, target: self, action: #selector(self.onFavouriteClicked))
         self.navigationItem.rightBarButtonItem  = rightButton
@@ -59,8 +61,9 @@ class MeteorMapViewController: UIViewController {
     }
 
     @objc func onFavouriteClicked() {
-        guard let vModel = self.viewModel else { return }
-        FavouritesManager.shared.toggleFavourites(meteor: vModel.getMeteor())
+        guard let vModel = self.viewModel,
+              let meteor = vModel.getMeteor() else { return }
+        FavouritesManager.shared.toggleFavourites(meteor: meteor)
         self.setUpFavourites()
     }
     

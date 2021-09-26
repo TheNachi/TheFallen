@@ -16,7 +16,7 @@ class MeteorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Meteors"
+        self.title = StringConstants.meteors.rawValue
         self.activityIndicator.startAnimating()
         self.meteorListTableView.delegate = self
         self.meteorListTableView.dataSource = self
@@ -24,6 +24,16 @@ class MeteorViewController: UIViewController {
         self.viewModel = MeteorViewModel(with: meteorNetworkService)
         self.viewModel?.delegate = self
         self.viewModel?.getMeteors()
+        self.setupView()
+    }
+    
+    func setupView() {
+        let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: StringConstants.segmentTextColor.rawValue)]
+        meteorSegementedControl.setTitleTextAttributes(titleTextAttributes as [NSAttributedString.Key : Any], for: .normal)
+        meteorSegementedControl.setTitleTextAttributes(titleTextAttributes as [NSAttributedString.Key : Any], for: .selected)
+        let rightButton = UIBarButtonItem(image: UIImage(systemName: "goforward"), style: .plain, target: self, action: #selector(self.refreshData))
+        self.navigationItem.rightBarButtonItem  = rightButton
+        rightButton.tintColor = UIColor.white
     }
     
     @IBAction func segmentChanged(_ sender: UISegmentedControl) {
@@ -37,9 +47,15 @@ class MeteorViewController: UIViewController {
         }
     }
     
+    @objc func refreshData() {
+        guard let vModel = viewModel else { return }
+        self.activityIndicator.startAnimating()
+        vModel.getMeteors()
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let vModel = viewModel else { return }
-        if segue.identifier == "goToMap",
+        if segue.identifier == StringConstants.goToMap.rawValue,
            let meteeorMapVC = segue.destination as? MeteorMapViewController {
             meteeorMapVC.viewModel = MeteorMapViewModel(with: vModel.getMeteor(index: vModel.selectedIndex))
         }
@@ -54,7 +70,7 @@ extension MeteorViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let vModel = viewModel else { return UITableViewCell() }
-        let cell = tableView.dequeueReusableCell(withIdentifier: MeteorListTableViewCell.identifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: StringConstants.meteorListCell.rawValue, for: indexPath)
         
         if let meteorCell = cell as? MeteorListTableViewCell {
             meteorCell.bindViewModel(with: vModel.getMeteorCellViewModel(index: indexPath.row))
@@ -69,7 +85,7 @@ extension MeteorViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let vModel = viewModel else { return }
         vModel.selectedIndex = indexPath.row
-        self.performSegue(withIdentifier: "goToMap", sender: self)
+        self.performSegue(withIdentifier: StringConstants.goToMap.rawValue, sender: self)
     }
 }
 

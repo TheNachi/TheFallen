@@ -7,17 +7,17 @@
 
 import Foundation
 
-struct MeteorModel: Codable {
+struct MeteorModel: Codable, Equatable {
     var name: String?
-    var id: String
-    var nametype: String
-    var recclass: String
+//    var id: String
+//    var nametype: String
+//    var recclass: String
     var mass: String?
-    var fall: String
+//    var fall: String
     var year: String?
     var reclat: String?
     var reclong: String?
-    var geolocation: GeolocationModel?
+//    var geolocation: GeolocationModel?
 }
 
 struct GeolocationModel: Codable {

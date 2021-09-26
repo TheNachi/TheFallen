@@ -9,15 +9,15 @@ import Foundation
 import MapKit
 
 struct MeteorMapViewModel {
-    private let meteor: MeteorModel
+    private let meteor: MeteorModel?
     
-    init(with meteor: MeteorModel) {
+    init(with meteor: MeteorModel?) {
         self.meteor = meteor
     }
     
     public func getLocation() -> CLLocation? {
-        if let latitude = meteor.reclat,
-           let longitude = meteor.reclong,
+        if let latitude = meteor?.reclat,
+           let longitude = meteor?.reclong,
            let lattDouble = Double(latitude),
            let longDouble = Double(longitude) {
             return CLLocation(latitude: Double(lattDouble), longitude: Double(longDouble))
@@ -25,11 +25,11 @@ struct MeteorMapViewModel {
         return nil
     }
     
-    public func getMeteor() -> MeteorModel {
+    public func getMeteor() -> MeteorModel? {
         return self.meteor
     }
     
     public func getMeteorName() -> String {
-        return meteor.name ?? ""
+        return meteor?.name ?? ""
     }
 }

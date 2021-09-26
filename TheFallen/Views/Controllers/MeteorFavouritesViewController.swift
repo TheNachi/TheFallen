@@ -14,7 +14,7 @@ class MeteorFavouritesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Favourites"
+        self.title = StringConstants.favourites.rawValue
         self.meteorFavouritesTableView.dataSource = self
         self.meteorFavouritesTableView.delegate = self
     }
@@ -28,7 +28,7 @@ class MeteorFavouritesViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToMapFromFavourites",
+        if segue.identifier == StringConstants.goToMapFromFavourites.rawValue,
            let meteeorMapVC = segue.destination as? MeteorMapViewController {
             meteeorMapVC.viewModel = MeteorMapViewModel(with: viewModel.getMeteor(index: viewModel.selectedIndex))
         }
@@ -42,7 +42,7 @@ extension MeteorFavouritesViewController: UITableViewDelegate, UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: MeteorFavouritesTableViewCell.identifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: StringConstants.meteorFavouriteCell.rawValue, for: indexPath)
         
         if let meteorFavouriteCell = cell as? MeteorFavouritesTableViewCell {
             meteorFavouriteCell.bindViewModel(with: viewModel.getMeteorCellViewModel(index: indexPath.row))
@@ -56,6 +56,6 @@ extension MeteorFavouritesViewController: UITableViewDelegate, UITableViewDataSo
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         viewModel.selectedIndex = indexPath.row
-        self.performSegue(withIdentifier: "goToMapFromFavourites", sender: self)
+        self.performSegue(withIdentifier: StringConstants.goToMapFromFavourites.rawValue, sender: self)
     }
 }

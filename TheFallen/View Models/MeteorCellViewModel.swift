@@ -12,10 +12,10 @@ struct MeteorCellViewModel {
     let meteorCrashDate: String
     let meteorSize: String
     
-    init(with model: MeteorModel) {
-        self.meteorName = model.name ?? ""
-        self.meteorCrashDate = model.year?.dateStringConversation() ?? ""
-        self.meteorSize = model.mass ?? ""
+    init(with model: MeteorModel?) {
+        self.meteorName = model?.name ?? ""
+        self.meteorCrashDate = model?.year?.dateStringConversation() ?? ""
+        self.meteorSize = model?.mass ?? ""
     }
     
     func mergeDateAndSize() -> String {

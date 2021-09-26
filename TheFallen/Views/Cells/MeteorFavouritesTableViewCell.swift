@@ -7,9 +7,7 @@
 
 import UIKit
 
-class MeteorFavouritesTableViewCell: UITableViewCell {
-    static let identifier = "meteorFavouriteCell"
-    
+class MeteorFavouritesTableViewCell: UITableViewCell {    
     @IBOutlet weak var meteorNameLabel: UILabel!
     @IBOutlet weak var meteorDateSizeLabel: UILabel!
     

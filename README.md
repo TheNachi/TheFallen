@@ -1,10 +1,13 @@
 # TheFallen
 
-This repo holds the source code for a 
+This repo holds the source code for a simple app that displays a list of fallen meteors on Earth
 
 ## Functions
-
-- 
+- View a list of fallen meteors
+- Sort list of meteors by date or size
+- Open a map view of selected meteor fall location
+- Favourite a meteor
+- View a list of favourite meteors
 
 ## Getting Started
 
@@ -22,18 +25,7 @@ These instructions will help you set up the project and get running on your loca
 
       `https://github.com/TheNachi/TheFallen.git`
       
-  - Visit the link below, sign up for a MapBox Account and follow the instruction to create your secret token and store it in a `.netrc` file in your home directory
-
-      `https://docs.mapbox.com/ios/maps/guides/install/`
-      #### Format for .netrc
-      ```
-      machine api.mapbox.com
-      login mapbox
-      password <INSERT SECRET API TOKEN>
-      ```
-
   - cd TheFallen
-  - run `pod install`
   - Open xcode and select a target device
   - Build the app with Xcode
 
@@ -43,7 +35,7 @@ Run `CMD+U` on XCode to run all tests.
 
 ### External Framework Used
 
-Mapbox was used because of it's relative ease of customization of map tiles and fast loading due to custom tile generation
+No external framework was used
 
 ### Architecture
 

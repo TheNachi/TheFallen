@@ -23,7 +23,7 @@ class MeteorViewModel {
         meteorNetworkService.getMeteors()
     }
     
-    private func updateMeteorList(with meteors: [MeteorModel]) {
+    public func updateMeteorList(with meteors: [MeteorModel]) {
         self.meteorList = meteors.filter({ meteors in
             meteors.mass != nil && meteors.year != nil && String(meteors.year!.prefix(10)).toDate() != nil && Int(meteors.year!.prefix(4))! > 1900
         })

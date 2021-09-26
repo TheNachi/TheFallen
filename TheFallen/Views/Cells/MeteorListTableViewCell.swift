@@ -7,9 +7,7 @@
 
 import UIKit
 
-class MeteorListTableViewCell: UITableViewCell {
-    static let identifier = "meteorListCell"
-    
+class MeteorListTableViewCell: UITableViewCell {    
     @IBOutlet weak var meteorNameLabel: UILabel!
     @IBOutlet weak var meteorDateSizeLabel: UILabel!
     
